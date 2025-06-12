@@ -5,19 +5,37 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <h2>Advanced Search</h2>
+        <div class="container">
+            <div id="main-div"><h2>Advanced Search</h2></div>
+            <div id="navigation">
+                <header>
+                    <a href="index.html">Google Search</a>
+                </header>
+            </div>
+        </div>        
 
-            <a href="index.html">Google Search</a>
-        </header>
-        
+        <form method="get" action="https://www.google.com/advanced_search" id="advancedsearch">
+            <div class="field">
+                <label for="field1">all these words: </label> 
+                <input type="text" id="field1" name="as_q"> <br><br>
+            </div>            
 
-        <form method="get" action="https://www.google.com/search" id="advancedsearch">
-            all these words: <input type="text" name="q"> <br><br>
-            this exact word phrase: <input type="text"> <br><br>
-            any of these words: <input type="text"> <br><br>
-            none of these words: <input type="text"> <br><br>
-            <input type="submit" value="Google Search">
+            <div class="field">
+                <label for="field2">this exact word phrase: </label> 
+                <input type="text" id="field2" name="as_epq"> <br><br>
+            </div>
+
+            <div class="field">
+                <label for="field3">any of these words: </label> 
+                <input type="text" id="field3" name="as_oq"> <br><br>
+            </div>
+
+            <div class="field">
+                <label for="field3">none of these words: </label> 
+                <input type="text" id="field4" name="as_eq"> <br><br>
+            </div>
+            <input type="submit" value="Advanced Search">
         </form>
+
     </body>
 </html>
