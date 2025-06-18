@@ -5,18 +5,53 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container">
-            <div id="main-div"></div>
-            <div id="navigation">
-                <header>
-                    <a href="index.html">Google Search</a>
-                </header>
-            </div>
-        </div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Google Search</a></li>
+                </ul>
+            </nav>
+        </header>
         
-        <form method="get" action="https://www.google.com/images">
-            <input id="search" type="text" name="q"> <br><br>
-            <input type="submit" value="Google Search">
-        </form>
+        <section class="search-wrapper">
+            <img 
+                class="logo" 
+                src="images/logo.png" 
+                alt="logo">
+            <form id="formSearch" method="get" action="https://www.google.com/images">
+                <img 
+                    class="search"
+                    src="images/Magnifying-glass.png">
+                <img
+                    class="mic"
+                    src="images/microphone.png">
+                <input id="search" type="text" name="q">
+                <div class="buttons">
+                    <input class="button" type="submit" value="Google Search">
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <div class="panel">
+                <ul>
+                    <li><a href=#>Advertising</a></li>
+                    <li><a href=#>Business</a></li>
+                    <li><a href=#>How Search Works</a></li>
+                </ul>
+                <div class="environment">
+                    <img 
+                        class="leaf"
+                        src="images/leaf.png"
+                        alt="leaf">
+                    <a href=#>Applying AI towards science and the environment</a>
+                </div>
+                <ul class="right">
+                    <li><a href=#>Privacy</a></li>
+                    <li><a href=#>Terms</a></li>
+                    <li><a href=#>Settings</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
