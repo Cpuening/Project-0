@@ -22,3 +22,11 @@ Here is the link to [Project 0](https://cpuening.github.io/Project-0/)
 - The user should be able to type in a query, click a search button and be taken to Google Image search results for that page
 ### Google Advanced Search Requirements:
 - Link in the upper right directing back to the Google Search page
+- The user should be able to provide input for the following fields:
+  - Find pages with... "all these words:"
+  - Find pages with... "this exact word or phrase:"
+  - Find pages with... "any of these words:"
+  - Find pages with... "none of these words:"
+-The four options should be stacked vertically and all of the text fields should be left aligned.
+- Consistent with Google's own "Advanced Search" button should be blue with white text
+- When the button is clicked, the user should be taken to the search results page for their given query
