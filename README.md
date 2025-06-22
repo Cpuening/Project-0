@@ -1,5 +1,6 @@
-# Project 0
-
+# Project 0 - Google Clone
+This code is meant to replicate the functionality and personality of Google Search, Google Image Search and Google Advanced Search. This project was created using HTML and CSS.\
+  \
 Here is the link to [Project 0](https://cpuening.github.io/Project-0/)
 
 # Requirements
