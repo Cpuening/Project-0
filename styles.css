@@ -1,19 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 14px;
-    color: #555;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #555;
 }
 
 body {
-  height: 100vh;
-  overflow: hidden;
   font-family: Roboto, Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-color: #fff;
+  color: #202124;
+  margin: 0;
+  padding: 2em;
 }
+
+.container {
+  margin: auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  border-bottom: 1px solid #dadce0;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  color: #d93025;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+}
+
+.form-group.buttons {
+  justify-content: flex-end;
+}
+
+button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ae8;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -22,14 +70,14 @@ nav {
 }
 
 ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
 li {
-    text-align: center;
-    padding: 14px 12px;
+  text-align: center;
+  padding: 14px 12px;
 }
 
 a {
@@ -41,15 +89,15 @@ li a:hover {
 }
 
 .search-wrapper {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: middle;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .logo {
-    width: 272px;
+  width: 272px;
 }
 
 form {
@@ -58,85 +106,56 @@ form {
 }
 
 input#search{
-    width: 580px;
-    height: 45px;
-    padding-left: 50px;
-    font-size: 1.2rem;
-    border-radius: 45px;
-    border: 1px solid #d3d3d3;
+  width: 580px;
+  height: 45px;
+  padding-left: 50px;
+  font-size: 1.2rem;
+  border-radius: 45px;
+  border: 1px solid #d3d3d3;
 }
 
 input#search:hover {
-    box-shadow: 0 1px 3px 1px rgba(201, 201, 201, 0.5);
+  box-shadow: 0 1px 3px 1px rgba(201, 201, 201, 0.5);
 }
 
 input#search:focus {
-    outline: none;
+  outline: none;
 }
 
 .search {
-    width: 15px;
-    position: absolute;
-    top: 15px;
-    left: 15px; 
+  width: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px; 
 }
 
 .mic {
-    width: 15px;
-    position: absolute;
-    top: 15px;
-    left: 545px;
+  width: 15px;
+  position: absolute;
+  top: 15px;
+  left: 545px;
 }
 
 .buttons {
-    width: 350px;
-    margin: auto;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  width: 350px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .button {
-    border: 1px solid transparent;
-    padding: 8px 12px;
-    background-color: #f8f9f8;
-    border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  background-color: #f8f9f8;
+  border-radius: 5px;
 }
 
 .button:hover {
-    border: 1px solid #eee;
-    box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.5);
-    cursor: pointer;
-}
-
-footer {
-    width: 100%;
-    background-color: #f2f2f2;
-}
-
-.panel {
-    border-bottom: 1px solid #ddd;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-.panel > * {
-    flex-basis: 33%;
-}
-
-.environment {
-    text-align: center;
-}
-
-.leaf {
-    height: 12px;
-}
-
-.right {
-    justify-content: flex-end;
+  border: 1px solid #eee;
+  box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.5);
+  cursor: pointer;
 }
 
 input[id=search] {
@@ -148,19 +167,6 @@ input[id=search] {
 
 div[id=advancedform] form {
   text-align: left;
-}
-
-div[class=container] div[id=navigation] {
-  text-align: right;
-}
-
-.appbar {
-  color: #d93025;
-  font-size: 20px;
-}
-
-.lineDivider {
-  border-bottom: 1px solid #ebebeb;
 }
 
 .textinput
