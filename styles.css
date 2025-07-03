@@ -52,14 +52,10 @@ h1 {
 
 .form-group.buttons {
   display: flex;
-  justify-content: flex-start; /* Aligns with labels */
-  margin-top: 20px;
-  margin-left: 675px; /* Matches the width of label column (e.g., 200px + spacing) */
-}
-
-/* .form-group.buttons {
   justify-content: flex-end;
-} */
+  margin-top: 20px;
+  margin-left: 470px;
+}
 
 button {
   display: flex;
