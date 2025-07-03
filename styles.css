@@ -15,7 +15,10 @@ body {
 }
 
 .container {
-  margin: auto;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 160px;
+  text-align: left;
 }
 
 h1 {
@@ -29,9 +32,14 @@ h1 {
 
 .form-group {
   display: flex;
-  flex-direction: row;
   align-items: center;
   margin-bottom: 1em;
+}
+
+.form-group label {
+  flex: 0 0 220px;
+  margin-right: 10px;
+  font-size: 14px;
 }
 
 .form-group input {
@@ -43,8 +51,15 @@ h1 {
 }
 
 .form-group.buttons {
-  justify-content: flex-end;
+  display: flex;
+  justify-content: flex-start; /* Aligns with labels */
+  margin-top: 20px;
+  margin-left: 675px; /* Matches the width of label column (e.g., 200px + spacing) */
 }
+
+/* .form-group.buttons {
+  justify-content: flex-end;
+} */
 
 button {
   display: flex;
@@ -156,25 +171,4 @@ input#search:focus {
   border: 1px solid #eee;
   box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.5);
   cursor: pointer;
-}
-
-input[id=search] {
-  border-radius: 20px;
-  width: 30%;
-  height: 15px;
-  padding: 10px 20px;
-}
-
-div[id=advancedform] form {
-  text-align: left;
-}
-
-.textinput
-{
-  border-radius: 1px;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  font-size: 13px;
-  height: 25px;
-  padding: 1px;
 }
